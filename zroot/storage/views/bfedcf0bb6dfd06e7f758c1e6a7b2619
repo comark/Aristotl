@@ -1,0 +1,36 @@
+
+<!-- Page Descrription Begins-->
+<div class="page-desc-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 page-desc">
+<?php if(isset($title)): ?>
+<h2 class="animated"  data-animation="fadeInRight" data-animation-delay="300"><?php echo $title; ?></h2>
+<p class="animated"  data-animation="fadeInLeft" data-animation-delay="300"></p>
+<?php endif; ?>                             
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Page Description Ends-->
+
+
+<div class="container">
+	<div class="row">
+            <div class="col-md-9 col-sm-9">
+ <?php if(isset($center)): ?>
+    <?php echo $center; ?>
+<?php endif; ?>            
+            </div>
+        
+        
+            <div class="col-md-3 col-sm-3 side-bar"> 
+ <?php if(isset($sidebar)): ?>
+    <?php echo $sidebar; ?>
+<?php endif; ?>             
+            </div>  
+    </div>            
+</div>
+
+

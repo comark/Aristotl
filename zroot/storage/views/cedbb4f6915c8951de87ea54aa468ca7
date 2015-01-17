@@ -1,0 +1,3 @@
+<?php if(isset($data)): ?>
+ <?php echo  $data ; ?>
+<?php endif; ?>

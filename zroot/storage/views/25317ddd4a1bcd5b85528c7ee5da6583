@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- Apple devices fullscreen -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Apple devices fullscreen -->
+  <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <title><?php echo  Config::get('admin::config.site_title') ; ?> -<?php echo  Section::yield_content('title') ; ?></title>
+<?php echo  Asset::container('first')->styles() ; ?>
+<?php echo  Asset::styles() ; ?>
+<?php echo  Asset::container('last')->styles() ; ?>
+
+<script type="text/javascript">var BASE = "<?php echo  URL::base() ; ?>";</script>
+
+  
+<link rel="shortcut icon" href="<?php echo  URL::to('admin_assets/img/favicon.ico'); ; ?>">
+<link rel="apple-touch-icon-precomposed" href="<?php echo   URL::to('admin_assets/img/apple-touch-icon-precomposed.png'); ; ?>">
+ </head>
+ 
+    <body class="theme-darkblue">
+      <?php echo  Section::yield_content('top-hidden') ; ?>
+      <div id="navigation">
+        <div class="container-fluid">
+          <a href="<?php echo  URL::base() ; ?>" id="brand"><?php echo  Config::get('admin::config.site_title') ; ?></a>
+          <a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle navigation"><i class="icon-reorder"></i></a>
+          
+          <?php \Laravel\Section::start('navigation'); ?>
+          <ul class='main-nav'>
+            <?php echo \Laravel\Section::yield_section(); ?>
+          </ul>
+          <div class="user">
+           <?php echo  Section::yield_content('user') ; ?>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="content">
+       
+       <?php \Laravel\Section::start('content-left'); ?>
+        <div id="left">
+          <?php echo \Laravel\Section::yield_section(); ?>
+        </div>
+        <div id="main">
+         <?php echo  Section::yield_content('content-main') ; ?>
+        </div>
+      </div>
+    <div id="footer">
+      <p>
+        <?php echo  Config::get('admin::config.site_title') ; ?> <span class="font-grey-4">|</span> <a href="#">Contact Admin</a> <span class="font-grey-4">|</span>
+      </p>
+      <a href="#" class="gototop"><i class="icon-arrow-up"></i></a>
+    </div>
+<?php echo  Asset::container('first')->scripts() ; ?>
+<?php echo  Asset::scripts() ; ?>
+<?php echo  Asset::container('last')->scripts() ; ?>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+2014-12-18 18:40:46 ERROR - SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in E:\wamp\www\gaa\gaa_root\laravel\database\connectors\mysql.php on line 33
+2014-12-18 18:43:58 ERROR - SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in E:\wamp\www\gaa\gaa_root\laravel\database\connectors\mysql.php on line 33

@@ -1,0 +1,7 @@
+<?php if(isset($data['image']) && $data['image'] != ''): ?>
+<img style="max-width: 100%;" src="<?php echo  $data['image'] ; ?>" />
+<?php endif; ?>
+<br/>
+<?php if(isset($data['content'])): ?>
+<?php echo  $data['content'] ; ?>
+<?php endif; ?>

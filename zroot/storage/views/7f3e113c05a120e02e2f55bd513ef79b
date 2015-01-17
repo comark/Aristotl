@@ -1,0 +1,67 @@
+<?php if ( isset($top_menu) && count($top_menu) > 0  ): ?>
+   <?php foreach ( $top_menu as $tm ): ?>
+      <!--li-->
+
+      
+      <?php if ( isset($tm['sub_menu']) && count($tm['sub_menu']) > 0 ): ?>
+         <?php if ( isset($tm['active'] )  ): ?>
+           <li class='active'>
+         <?php else: ?>
+           <li>
+         <?php endif; ?>
+          <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+            <span><?php echo  $tm['title'] ; ?></span>
+            <span class="caret"></span>
+          </a>
+         <?php if ( isset($tm['sub_menu']['level1']) && count($tm['sub_menu']['level1']) > 0 ): ?>
+          <ul class="dropdown-menu">
+           <?php foreach ($tm['sub_menu']['level1'] as $level1_key => $level1_val ): ?>
+             <?php if ( isset($level1_val['dropdown']) ): ?>
+              <li class='dropdown-submenu'>
+                <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+                  <?php echo  $level1_val['title'] ; ?>
+                </a>
+                <?php if (isset($tm['sub_menu']['level2']) && count($tm['sub_menu']['level2']) > 0 ): ?>
+                <ul class="dropdown-menu">
+                  <?php foreach ($tm['sub_menu']['level2'] as $level2_key => $level2_val ): ?>
+                    <?php if ( $level2_val['parent'] ==  $level1_key ): ?>
+                    
+                       <?php if (isset($level2_val['dropdown'])): ?>
+                        <li class='dropdown-submenu'>
+                          <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+                            <?php echo  $level2_val['title'] ; ?>
+                          </a>
+                          <ul class="dropdown-menu">
+                           <?php foreach ($tm['sub_menu']['level3'] as $level3_key => $level3_val ): ?>
+                             <?php if ( $level3_val['parent'] ==  $level2_key ): ?>
+                              <li>
+                                <a href="<?php echo  URL::base().'/'.$tm['root_link'].'/'.$level3_val['controller_func'] ; ?>"><?php echo  $level3_val['title'] ; ?></a>
+                              </li>                         
+                             <?php endif; ?>                           
+                           <?php endforeach; ?>
+                          </ul>
+                        </li>
+                       <?php else: ?>
+                       <li>
+                         <a href="<?php echo  URL::base().'/'.$tm['root_link'].'/'.$level2_val['controller_func'] ; ?>"><?php echo  $level2_val['title'] ; ?></a>
+                       </li>
+                      <?php endif; ?>
+                    <?php endif; ?>
+                  <?php endforeach; ?>
+                </ul>
+                <?php endif; ?>
+              </li>           
+             <?php else: ?>
+              <li>
+                <a href="<?php echo  URL::base().'/'.$tm['root_link'].'/'.$level1_val['controller_func'] ; ?>">
+                  <?php echo  $level1_val['title'] ; ?>
+                </a>
+              </li>  
+             <?php endif; ?>        
+           <?php endforeach; ?>
+          </ul>
+         <?php endif; ?>
+      <?php endif; ?>      
+      <!-- end li -->
+   <?php endforeach; ?>
+<?php endif; ?>

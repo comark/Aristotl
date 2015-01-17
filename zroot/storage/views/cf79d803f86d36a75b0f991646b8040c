@@ -1,0 +1,191 @@
+<!-- Team Section Begins -->
+<section id="team" class="team-section section slant-angle">
+	<!-- Slant Shape -->
+	<div class="slant-top-angle"></div>
+	<div class="section-inner">
+		<!-- Work With Us Top Content - Begins -->
+		<div class="container">
+			<div class="row">
+				<!-- your-work Info Begins -->
+				<div class="col-xs-12">
+					<!-- Title -->
+					<h2 class="section-title text-center color-white animated" data-animation="fadeInRight" data-animation-delay="300">We work with team</h2>
+					<!-- Sub Title -->
+					<p class="sub-title text-center color-white animated" data-animation="fadeInLeft" data-animation-delay="300">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+				</div>
+				<!-- your-work Info Ends -->
+			</div>
+		</div>
+		<!-- Work With Us Top Content - Ends -->
+		<!-- Screenshot Carousel Begins -->
+		<div class="container slider-container">
+			<div class="row">
+				<div class="col-xs-12 animated" data-animation="fadeInUp" data-animation-delay="500">
+					<!-- Carousel Slider Container Begins -->
+					<div id="team-slider" class="team-carousel-slider">
+						<!-- Item 2 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/1.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">Veronika Klark</h3>
+								<h4 class="designation">Designer</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 2 Ends -->
+						<!-- Item 2 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/2.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">John Newman</h3>
+								<h4 class="designation">Designer</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 2 Ends -->
+						<!-- Item 3 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/3.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">Nika Nilson</h3>
+								<h4 class="designation">Support</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 3 Ends -->
+						<!-- Item 4 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/4.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">Veronika Klark</h3>
+								<h4 class="designation">Project meneger</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 4 Ends -->
+						<!-- Item 5 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/5.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">John Newman</h3>
+								<h4 class="designation">Designer</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 5 Ends -->
+						<!-- Item 6 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/6.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">Nika Nilson</h3>
+								<h4 class="designation">Support</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 6 Ends -->
+						<!-- Item 7 Begins -->
+						<div class="team-item color-white">
+							<!-- Img -->
+							<img src="images/team/7.png" width="370" height="225" alt="" class="img-responsive" />
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name">Veronika Klark</h3>
+								<h4 class="designation">Project meneger</h4>
+								<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+								<!-- Social Icons -->
+								<div class="social-team">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Item 7 Ends -->
+					</div>
+					<!-- Carousel Slider Container Ends -->
+					<div class="scrolling text-center"><span>Move to scrolling</span></div>
+				</div>
+			</div>
+		</div>
+		<!-- Screenshot Carousel Ends -->
+	</div>
+	<!-- Slant Shape -->
+	<div class="slant-bottom-angle"></div>
+</section>
+<!-- Team Section Ends -->

@@ -1,0 +1,22 @@
+/* 
+    Document   : ifast
+    Created on : Jul 14, 2013, 11:33:50 AM
+    Author     : comark
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.ifasttiles{
+  float:left;
+}
+
+.ifasttiles li {
+  margin-top:8px;
+}
+
+.seat{z-index:10;}
+.targetseat{z-index:11;}
+.popup_section {
+  left:50%;
+  top:50%;
+}

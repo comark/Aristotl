@@ -1,0 +1,27 @@
+ 
+<div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <p style="font-size:12px;margin-top:5px;">Copyright © <?php echo  date('Y'); ?> Chase Bank Kenya. All rights reserved. Chase Bank is regulated by Central Bank of Kenya.</p>
+                </div>
+                <div class="col-lg-3">
+                <ul class="list-unstyled list-inline list-social-icons bottom-social">
+                    <li>
+                        <a href="https://www.facebook.com/ChaseBankKenya" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/company/chase-bank-kenya-ltd" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/chasebankkenya" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/102336425297341197173" target="_blank"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/chasebankkenya" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                    </li>	
+                </ul>       
+                </div>
+            </div>
+</div>

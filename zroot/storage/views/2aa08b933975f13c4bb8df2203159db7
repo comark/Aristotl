@@ -1,0 +1,27 @@
+<!-- 
+Template Name: Blog List
+--> 
+
+<?php if (TreasuryL\ContentHelper::get_blogs('post')): ?>
+
+<?php foreach ( TreasuryL\ContentHelper::get_blogs('post') as $data_big_key=>$data_big_val ): ?>
+
+        <?php if(isset($data_big_val) && $data_big_key == 'pagination_top'): ?>
+               <?php echo  $data_big_val ; ?>
+        <?php endif; ?>
+        
+        <?php if(isset($data_big_val) && $data_big_key == 'data'): ?>
+            <?php foreach( $data_big_val as $data): ?>
+               <?php echo  TreasuryL\ContentHelper::single_blog($data) ; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+
+        <?php if(isset($data_big_val) && $data_big_key == 'pagination_bottom'): ?>
+               <?php echo  $data_big_val ; ?>
+        <?php endif; ?>
+   
+
+ <?php endforeach; ?>
+ <?php endif; ?>          
+
+

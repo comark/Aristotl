@@ -1,0 +1,36 @@
+<!-- 
+Template Name: Blog List
+--> 
+
+<?php if (IctaL\Helper::get_blogs()): ?>
+
+<?php foreach ( IctaL\Helper::get_blogs() as $data ): ?>
+    <div class="blog_post">	
+            <div class="blog_postcontent">
+            <h3><a href="<?php echo  URL::base() ; ?>/blogitem/<?php echo  $data->guid ; ?>"><?php echo  $data->title ; ?></a></h3>
+                        
+                <ul class="post_meta_links">
+                    <li>
+                        <a href="#" class="date">                            
+                            <?php echo  IctaL\Helper::blog_date_helper($data->created_at) ; ?>
+                        </a>
+                    </li>
+                </ul>
+            <div class="image_frame">
+                <?php if($data->image): ?>
+                <img src="<?php echo  URL::base(); ?>/blogitem/<?php echo  $data->image ; ?>" style="width:100%;" alt="" />
+                <?php endif; ?>
+            </div>
+            <p>
+                <?php echo  $data->content ; ?>
+            </p>
+             <div class="clearfix"></div>
+             <div class="margin_top1"></div>
+        
+            </div>
+        </div><!-- /# end post -->
+         <div class="clearfix divider_line9 lessm"></div>
+ <?php endforeach; ?>
+ <?php endif; ?>          
+
+

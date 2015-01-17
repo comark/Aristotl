@@ -1,0 +1,27 @@
+ <?php if (isset($data)): ?>
+    <div class="blog_post">	
+            <div class="blog_postcontent">
+            <div class="image_frame">
+                <?php if($data->image): ?>
+                <img src="<?php echo  URL::base(); ?>/<?php echo  $data->image ; ?>" style="width:100%;" alt="" />
+                <?php endif; ?>
+            </div>
+            <h3><?php echo  $data->title ; ?></h3>
+                <ul class="post_meta_links">
+                    <li>
+                        <a href="#" class="date">
+                            
+                            <?php echo  IctaL\Helper::blog_date_helper($data->created_at) ; ?>
+                        </a>
+                    </li>
+                </ul>
+             <div class="clearfix"></div>
+             <div class="margin_top1"></div>
+            <p>
+                <?php echo  $data->content ; ?>
+            </p>
+            </div>
+        </div><!-- /# end post -->
+ <?php endif; ?>          
+ <div class="clearfix divider_line9 lessm"></div>
+

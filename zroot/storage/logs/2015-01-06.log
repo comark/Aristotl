@@ -1,0 +1,4 @@
+2015-01-06 19:18:27 ERROR - Class 'Ictacustom_Home_Controller' not found in E:\wamp\www\icta\zroot\laravel\routing\controller.php on line 228
+2015-01-06 19:50:03 ERROR - Undefined variable: tab in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 50
+2015-01-06 19:50:45 ERROR - Invalid argument supplied for foreach() in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 54
+2015-01-06 19:56:43 ERROR - Illegal string offset 'type' in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 62

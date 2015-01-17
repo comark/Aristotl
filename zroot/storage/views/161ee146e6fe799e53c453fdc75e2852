@@ -1,0 +1,82 @@
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h3><i class="icon-th-list"></i> 
+                  <?php if (isset($data['form_title'])): ?>
+                    <?php echo  $data['form_title'] ; ?>
+                  <?php endif; ?>
+                </h3>
+							</div>
+							<div class="box-content nopadding">
+								<form action="<?php echo URL::base(); ?>/content/submit" enctype="multipart/form-data" method="POST" class='form-validate form-horizontal form-bordered' id="editcreate">
+                      <?php if ( Session::get('myerrors') ): ?>
+                        <div class="control-group error">
+                          <div class="controls">
+                           <span class="help-block error" style=""><?php echo  Session::get('myerrors') ; ?></span>
+                          </div>
+                        </div>
+                      <?php endif; ?>
+                      <?php if ( count($errors->messages) > 0 ): ?>
+                        <div class="control-group error">
+                          <label for="errors" class="control-label">Errors</label>
+                          <div class="controls">
+                          <?php foreach ( $errors->messages as $key => $val): ?>  
+                          <span class="help-block error" style=""><?php echo  $val[0]; ?></span>
+                          <?php endforeach; ?>
+                          </div>
+                        </div>
+                      <?php endif; ?>
+                      <?php if ( isset($data['text']) && count($data['text']) > 0 ): ?>
+                        <?php foreach ( $data['text'] as $text ): ?>
+                           <?php echo  $text ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+                      <?php if ( isset($data['textarea']) && count($data['textarea']) > 0 ): ?>
+                        <?php foreach ( $data['textarea'] as $textarea ): ?>
+                           <?php echo  $textarea ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+                      <?php if ( isset($data['select']) && count($data['select']) > 0 ): ?>
+                        <?php foreach ( $data['select'] as $select ): ?>
+                           <?php echo  $select ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+                      <?php if ( isset($data['multiple']) && count($data['multiple']) > 0 ): ?>
+                        <?php foreach ( $data['multiple'] as $multiple ): ?>
+                           <?php echo  $multiple ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?> 
+                      <?php if ( isset($data['password']) && count($data['password']) > 0 ): ?>
+                        <?php foreach ( $data['password'] as $password ): ?>
+                           <?php echo  $password ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+                      <?php if ( isset($data['file']) && count($data['file']) > 0 ): ?>
+                        <?php foreach ( $data['file'] as $file ): ?>
+                           <?php echo  $file ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?> 
+                      <?php if ( isset($data['checkbox']) && count($data['checkbox']) > 0 ): ?>
+                        <?php foreach ( $data['checkbox'] as $checkbox ): ?>
+                           <?php echo  $checkbox ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+                      <?php if ( isset($data['hidden']) && count($data['hidden']) > 0 ): ?>
+                        <?php foreach ( $data['hidden'] as $hidden ): ?>
+                           <?php echo  $hidden ; ?>
+                        <?php endforeach; ?>
+                      <?php endif; ?>                       
+									<div class="form-actions">
+                    <?php if ( isset($data['action']) && $data['action'] == 'edit' ): ?>
+										<input type="submit" name="edit" class="btn btn-primary" value="Save Changes">
+                    <input type="submit" name="delete" class="btn btn-inverse" value="Delete">
+                    <?php elseif ( isset($data['action']) && $data['action'] == 'create' ): ?>
+                    <input type="submit" name="create" class="btn btn-primary" value="Create">
+                    <?php endif; ?>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>

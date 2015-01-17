@@ -1,0 +1,15 @@
+2015-01-04 08:41:37 ERROR - Class 'Modern_Base_Controller' not found in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 9
+2015-01-04 08:42:05 ERROR - Class 'ICTA_Base_Controller' not found in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 9
+2015-01-04 08:42:21 ERROR - View [modern::index] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-04 08:42:36 ERROR - View [modern::tpls.menu] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-04 08:46:02 ERROR - View [icta::partials.carousel] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-04 10:53:43 ERROR - Undefined variable: page in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 35
+2015-01-04 10:53:54 ERROR - Indirect modification of overloaded property Icta_Home_Controller::$sects has no effect in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 42
+2015-01-04 10:54:34 ERROR - View [utawala::pagetpls.default] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-04 10:54:57 ERROR - View [utawala::pagetpls.default] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-04 10:55:11 ERROR - Undefined variable: widget_array in E:\wamp\www\icta\zroot\bundles\icta\libraries\helper.php on line 81
+2015-01-04 10:55:14 ERROR - Undefined variable: widget_array in E:\wamp\www\icta\zroot\bundles\icta\libraries\helper.php on line 81
+2015-01-04 10:55:48 ERROR - Array to string conversion in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 2
+2015-01-04 10:57:51 ERROR - Array to string conversion in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 2
+2015-01-04 11:14:50 ERROR - syntax error, unexpected 'endif' (T_ENDIF) in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 4
+2015-01-04 11:25:11 ERROR - Undefined index: class in E:\wamp\www\icta\zroot\bundles\icta\libraries\helper.php on line 133

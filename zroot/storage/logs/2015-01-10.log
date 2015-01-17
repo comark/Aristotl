@@ -1,0 +1,49 @@
+2015-01-10 07:20:31 ERROR - SQLSTATE[HY000] [2002] The requested address is not valid in its context.
+ in E:\wamp\www\icta\zroot\laravel\database\connectors\mysql.php on line 33
+2015-01-10 07:20:46 ERROR - SQLSTATE[HY000] [2002] The requested address is not valid in its context.
+ in E:\wamp\www\icta\zroot\laravel\database\connectors\mysql.php on line 33
+2015-01-10 07:31:43 ERROR - Call to undefined function Laravel\finfo_file() in E:\wamp\www\icta\zroot\laravel\file.php on line 184
+2015-01-10 08:36:01 ERROR - Undefined variable: posts in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 117
+2015-01-10 08:36:03 ERROR - Undefined variable: posts in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 117
+2015-01-10 09:12:34 ERROR - Undefined variable: notes in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 147
+2015-01-10 09:37:26 ERROR - Undefined variable: id in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 284
+2015-01-10 09:38:02 ERROR - Undefined variable: id in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 285
+2015-01-10 11:52:54 ERROR - syntax error, unexpected ''slideshow'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\wamp\www\icta\zroot\bundles\ictacustom\config\fields.php on line 28
+2015-01-10 13:31:37 ERROR - Trying to get property of non-object in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 232
+2015-01-10 13:37:43 ERROR - Undefined variable: serialize in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 261
+2015-01-10 14:00:09 ERROR - Undefined variable: id in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 309
+2015-01-10 14:32:48 ERROR - Undefined variable: p in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 71
+2015-01-10 14:33:10 ERROR - Undefined variable: sidebar in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 75
+2015-01-10 15:34:29 ERROR - mail(): SMTP server response: 530 5.7.0 Must issue a STARTTLS command first. l9sm2684519wic.21 - gsmtp in E:\wamp\www\icta\zroot\bundles\icta\controllers\api.php on line 23
+2015-01-10 16:06:39 ERROR - View [icta::tpls.homesections.slider] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-10 16:31:41 ERROR - Undefined property: Laravel\Database\Query::$id in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 100
+2015-01-10 16:57:12 ERROR - Call to undefined function IctaL\ucase() in E:\wamp\www\icta\zroot\bundles\icta\libraries\helper.php on line 171
+2015-01-10 17:16:16 ERROR - Undefined variable: big in E:\wamp\www\icta\zroot\bundles\icta\libraries\helper.php on line 176
+2015-01-10 17:37:08 ERROR - Undefined index: id in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 363
+2015-01-10 17:37:32 ERROR - Undefined index: id in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 363
+2015-01-10 17:53:44 ERROR - Undefined index: guid in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 130
+2015-01-10 18:01:17 ERROR - Undefined index: id in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 454
+2015-01-10 18:02:19 ERROR - Undefined variable: legend in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 226
+2015-01-10 18:11:00 ERROR - Undefined variable: project in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 105
+2015-01-10 18:18:37 ERROR - Call to undefined method IctaL\Helper::home_validate_meta() in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 55
+2015-01-10 19:29:35 ERROR - Trying to get property of non-object in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 16
+2015-01-10 19:56:49 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 96
+2015-01-10 19:56:51 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 96
+2015-01-10 19:57:15 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 96
+2015-01-10 19:57:17 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 96
+2015-01-10 19:57:18 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 96
+2015-01-10 19:57:55 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 98
+2015-01-10 20:08:33 ERROR - Missing argument 1 for Icta_Home_Controller::action_blog() in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 91
+2015-01-10 20:11:13 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 98
+2015-01-10 20:11:15 ERROR - Undefined property: Laravel\Database\Query::$guid in E:\wamp\www\icta\zroot\bundles\icta\controllers\home.php on line 98
+2015-01-10 20:19:48 ERROR - Undefined variable: lt in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 14
+2015-01-10 21:37:56 ERROR - Undefined offset: 0 in E:\wamp\www\icta\zroot\bundles\content\libraries\helper.php on line 87
+2015-01-10 21:42:51 ERROR - Undefined offset: 0 in E:\wamp\www\icta\zroot\bundles\content\libraries\helper.php on line 87
+2015-01-10 21:42:52 ERROR - Undefined offset: 0 in E:\wamp\www\icta\zroot\bundles\content\libraries\helper.php on line 87
+2015-01-10 21:47:28 ERROR - Undefined offset: 0 in E:\wamp\www\icta\zroot\bundles\content\libraries\helper.php on line 87
+2015-01-10 21:48:03 ERROR - Undefined offset: 0 in E:\wamp\www\icta\zroot\bundles\content\libraries\helper.php on line 88
+2015-01-10 22:07:12 ERROR - View [icta::pagetpls.blogs] doesn't exist. in E:\wamp\www\icta\zroot\laravel\view.php on line 163
+2015-01-10 22:08:24 ERROR - syntax error, unexpected 'endif' (T_ENDIF) in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 30
+2015-01-10 22:10:19 ERROR - syntax error, unexpected 'endif' (T_ENDIF) in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 31
+2015-01-10 22:10:40 ERROR - syntax error, unexpected 'endif' (T_ENDIF) in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 29
+2015-01-10 22:11:13 ERROR - syntax error, unexpected 'endif' (T_ENDIF) in E:\wamp\www\icta\zroot\laravel\view.php(366) : eval()'d code on line 31

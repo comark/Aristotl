@@ -1,0 +1,6 @@
+<?php if(isset($widgets) && count($widgets) > 0): ?>
+<?php foreach($widgets as $widget_key=>$widget_val): ?>
+ <?php echo  $widget_val ; ?>
+ 
+<?php endforeach; ?>
+<?php endif; ?> 

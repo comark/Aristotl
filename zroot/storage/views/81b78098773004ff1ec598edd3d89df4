@@ -1,0 +1,19 @@
+        <div class="page-header">
+          <div class="pull-left">
+            <?php if ( isset ($title )): ?>
+            <h1> <?php echo  $title ; ?></h1>
+            <?php endif; ?>
+          </div>
+          <div class="pull-right">
+
+            <ul class="stats">
+              <li class='lightred'>
+                <i class="icon-calendar"></i>
+                <div class="details">
+                  <span class="big"></span>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>

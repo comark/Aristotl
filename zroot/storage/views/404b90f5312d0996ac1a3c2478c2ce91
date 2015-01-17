@@ -1,0 +1,26 @@
+<?php if ( isset($msg) ): ?>
+<div class="row-fluid">
+  <div class="span12">
+     <?php if ( isset($msg['class'])): ?>
+      <div class="alert alert-<?php echo  $msg['class'] ; ?>">
+     <?php else: ?>
+       <div class="alert">
+     <?php endif; ?>
+     
+       <button type="button" class="close" data-dismiss="alert">&times;</button>
+     
+     <?php if ( isset($msg['class']) && $msg['class'] == 'success'): ?>
+        <strong>Success!</strong>
+     <?php elseif ( isset($msg['class']) && $msg['class'] == 'info'): ?>
+        <strong>Note!</strong>
+     <?php elseif ( isset($msg['class']) && $msg['class'] == 'error'): ?>
+        <strong>Error!</strong>
+     <?php endif; ?>
+     
+     <?php if ( isset($msg['msg']) ): ?>
+       <?php echo  $msg['msg']; ?>
+     <?php endif; ?>
+      </div>
+  </div>
+</div>
+<?php endif; ?>

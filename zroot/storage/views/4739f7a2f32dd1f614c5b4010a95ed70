@@ -1,0 +1,51 @@
+<!-- Top Slider Begins -->
+<section class="top-slider">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="container">
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="carousel-caption">
+							<h1>We welcome you to our website</h1>
+							<p>All the best ideas collected specially for you</p>
+							<p> This theme has everything you need</p>
+							<div class="btn">Know more</div>
+						</div>
+						<div class="col-md-8 col-md-offset-4"> <img src="<?php echo URL::base(); ?>/treasury/images/slider/1.png" class="img-responsive"  alt="slider-1"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="carousel-caption">
+							<h1>We do business worldwide</h1>
+							<p>We ensure quality & support</p>
+							<p>People love us & we love them</p>
+							<div class="btn">Know more</div>
+						</div>
+						<div class="col-md-8 col-md-offset-4"> <img src="<?php echo URL::base(); ?>/treasury/images/slider/2.png"  class="img-responsive" alt="slider-1"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="carousel-caption">
+							<h1>We built for passionate people</h1>
+							<p>Awesome colors, based on bootstrap</p>
+							<p>Pixel perfect design</p>
+							<div class="btn">Know more</div>
+						</div>
+						<div class="col-md-8 col-md-offset-4"> <img src="<?php echo URL::base(); ?>/treasury/images/slider/3.png"  class="img-responsive" alt="slider-1"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <i class="fa fa-angle-right"></i> </a> </section>
+<!-- Top Slider Ends -->

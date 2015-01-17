@@ -1,0 +1,58 @@
+
+<?php \Laravel\Section::start('title'); ?>
+ <?php if (isset ($page_title)): ?>
+   <?php echo  $page_title ; ?>
+ <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('top-hidden'); ?>
+  <?php if( isset($top_hidden) ): ?>
+  <?php echo  $top_hidden ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('navigation'); ?>
+@parent
+  <?php if ( isset($nav) ): ?>
+  <?php echo  $nav ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+
+<?php \Laravel\Section::start('user'); ?>
+  <?php if ( isset($user_messages) ): ?>
+  <?php echo  $user_messages ; ?>
+  <?php endif; ?>
+  <?php if ( isset($user) ): ?>
+  <?php echo  $user ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+<?php \Laravel\Section::start('content-left'); ?>
+@parent 
+  <?php if ( isset($left_admin) ): ?>
+   <?php echo  $left_admin ; ?>
+  <?php endif; ?>
+  <?php if ( isset($left_hook) ): ?>
+   <?php echo  $left_hook ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('content-main'); ?>
+<div class="container-fluid">
+  <?php if (isset($center_top)): ?>
+    <?php echo  $center_top ; ?>
+  <?php endif; ?>
+  <?php if (isset ($no_access)): ?>
+     <?php echo  $no_access ; ?>
+  <?php else: ?>
+    <?php if ( isset($notes) ): ?>
+     <?php echo   $notes ; ?>
+    <?php endif; ?>
+    <?php if (isset($main)): ?>
+     <?php echo  $main ; ?>
+    <?php endif; ?>
+  <?php endif; ?>
+</div>
+<?php \Laravel\Section::stop(); ?>
+
+<?php echo view('admin::layouts/admin_base')->with(get_defined_vars())->render(); ?>

@@ -1,0 +1,82 @@
+
+
+<div class="features_sec4">
+    <div class="container">
+
+        <div class="onecol_sixty">
+
+            <h3 class="unline"><i class="fa fa-comments"></i> Latest Posts</h3>
+
+            <div class="clearfix"></div>
+
+<?php if(isset($latest) && count($latest>0)): ?>
+  <?php foreach ($latest as $lt): ?>
+            <div class="lblogs animate" data-anim-type="fadeIn" data-anim-delay="300">
+
+                
+                <div class="lbimg">
+                    <?php if ( $lt->image ): ?>
+                    <img width="280" src="<?php echo  $lt->image ; ?>" alt="" />
+                    <?php endif; ?>
+                    <?php echo  IctaL\Helper::home_date_helper($lt->created_at) ; ?>
+                    
+                </div>
+
+                <h5><?php echo  $lt->title ; ?></h5>
+
+                <p><?php echo  IctaL\Helper::home_blog_snippet($lt->content) ; ?></p>
+
+                <a href="<?php echo  URL::base() ; ?>/blogitem/<?php echo  $lt->guid ; ?>" class="remobut">Read More</a>
+
+            </div><!-- end section -->
+  <?php endforeach; ?>
+<?php endif; ?>
+
+ 
+
+        </div><!-- end all sections -->
+
+        <div class="onecol_forty last">
+
+            <div class="peosays">
+
+                <h3 class="unline"><i class="fa fa-briefcase"></i> Projects</h3>
+
+                <div class="clearfix"></div>
+
+                <div id="owl-demo11" class="owl-carousel small four">
+                    
+<?php if (isset($projects) && count($projects) > 0 ): ?>                    
+
+<?php foreach ($projects as $key=>$val): ?>
+                    <div class="box">
+
+                        <div class="ppimg">
+                            <?php if (IctaL\Helper::validate_meta($val->meta,'image')): ?>
+                            <img src="<?php echo  IctaL\Helper::validate_meta($val->meta,'image') ; ?>" style="width:80px; height:auto; border-radius:1%;" alt="" /> 
+                            <?php endif; ?>
+                            <h6><?php echo  $val->title ; ?> </h6>
+                        </div>
+<?php if (IctaL\Helper::validate_meta($val->meta,'image')): ?>
+                        <p><?php echo  IctaL\Helper::validate_meta($val->meta,'short_description') ; ?></p>
+<?php endif; ?>                       
+                       
+
+                    </div><!-- end slide -->
+<?php endforeach; ?>
+<?php endif; ?>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div><!-- end features section 4 -->
+
+<div class="clearfix"></div>

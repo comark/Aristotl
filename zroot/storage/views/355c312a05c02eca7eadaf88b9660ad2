@@ -1,0 +1,18 @@
+        <div class="dropdown">
+          <a href="#" class='dropdown-toggle' data-toggle="dropdown">
+            <?php echo  Sentry::user()->get('metadata.first_name') ; ?> <?php echo  Sentry::user()->get('metadata.last_name') ; ?>
+            <?php if ( Sentry::user()->get('metadata.avatar') ): ?>
+            <img style="max-width:27px; max-height:27px;" src="<?php echo  URL::base() ; ?>/<?php echo  Sentry::user()->get('metadata.avatar') ; ?>" alt="">
+            <?php else: ?>
+            <img style="max-width:27px; max-height:27px;" src="<?php echo  URL::base() ; ?>/admin_assets/img/aristotle.jpg" alt="">
+            <?php endif; ?>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li>
+              <a href="<?php echo  URL::base() ; ?>/xprofile">View profile</a>
+            </li>
+            <li>
+              <a href="<?php echo  URL::base() ; ?>/xlogout">Sign out</a>
+            </li>
+          </ul>
+        </div>

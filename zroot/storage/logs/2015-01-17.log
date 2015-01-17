@@ -1,0 +1,27 @@
+2015-01-17 08:46:14 ERROR - Undefined variable: bundle in E:\wamp\www\treasury\zroot\bundles\treasury\libraries\helper.php on line 85
+2015-01-17 10:03:10 ERROR - Undefined variable: type in E:\wamp\www\treasury\zroot\bundles\ictacustom\libraries\helper.php on line 20
+2015-01-17 10:03:44 ERROR - Class 'ICTACustomL\View' not found in E:\wamp\www\treasury\zroot\bundles\ictacustom\libraries\helper.php on line 44
+2015-01-17 11:17:04 ERROR - mail(): SMTP server response: 530 5.7.0 Must issue a STARTTLS command first. gl1sm1459913wib.13 - gsmtp in E:\wamp\www\treasury\zroot\bundles\treasury\controllers\api.php on line 54
+2015-01-17 11:21:40 ERROR - Class 'Message' not found in E:\wamp\www\treasury\zroot\bundles\treasury\controllers\api.php on line 53
+2015-01-17 11:25:52 ERROR - Class 'Message' not found in E:\wamp\www\treasury\zroot\bundles\treasury\controllers\api.php on line 54
+2015-01-17 11:42:44 ERROR - Class 'TreasuryL\ContentHelper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 5
+2015-01-17 11:43:17 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 10
+2015-01-17 11:44:26 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 10
+2015-01-17 11:45:48 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 10
+2015-01-17 11:45:49 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 10
+2015-01-17 11:47:09 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 10
+2015-01-17 11:47:57 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 11
+2015-01-17 11:48:06 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 11
+2015-01-17 11:51:20 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 11:51:43 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 11:51:46 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 11:52:01 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 11:52:15 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 8
+2015-01-17 11:53:54 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 11:54:46 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 11:54:46 ERROR - Trying to get property of non-object in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 12
+2015-01-17 12:14:58 ERROR - syntax error, unexpected 'endforeach' (T_ENDFOREACH) in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 24
+2015-01-17 12:15:12 ERROR - Class 'IctaL\ContentHelper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 14
+2015-01-17 12:15:59 ERROR - Class 'IctaL\ContentHelper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 14
+2015-01-17 12:16:19 ERROR - Class 'IctaL\ContentHelper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 14
+2015-01-17 15:55:48 ERROR - Class 'IctaL\ContentHelper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 9

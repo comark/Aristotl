@@ -1,0 +1,12 @@
+
+<div class="container">
+    
+    <!-- Logo -->
+    <div class="logo"><a href="<?php echo  URL::base() ; ?>" id="logo"></a></div>
+		
+<?php if (isset($content['menu']) ): ?>
+  <?php echo  $content['menu'] ; ?>
+<?php endif; ?>
+    
+	</div>
+            

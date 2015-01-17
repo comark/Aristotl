@@ -1,0 +1,29 @@
+ <?php if (isset($data)): ?>
+
+        
+			<!-- Blog Photo-->
+                        <div class="blog-post">
+			<div class="blog-top animated" data-animation="fadeInUp" data-animation-delay="500">
+                <?php if(TreasuryL\ContentHelper::custom_meta_object('image',$data->meta)): ?>
+                <img src="<?php echo  URL::base(); ?>/<?php echo  TreasuryL\ContentHelper::custom_meta_object('image',$data->meta) ; ?>" alt="blog-photo" class="img-responsive blog-photo" />
+                <?php endif; ?>                            
+				
+				
+			</div>	
+			<!-- Blog Post-Description-->
+			<div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="500">	
+				<div class="thumbnail">	
+					<div class="caption">
+						<h3><?php echo  $data->title ; ?></h3>
+						
+						<p class="blog-content">  <?php echo TreasuryL\ContentHelper::custom_meta_object('content',$data->meta); ?> </p>
+                <?php if ( TreasuryL\ContentHelper::custom_meta_object('file',$data->meta) ): ?>
+                <a href="<?php echo URL::base(); ?>/<?php echo TreasuryL\ContentHelper::custom_meta_object('file',$data->meta); ?>" class="date">                            
+                   Download
+                </a>
+                <?php endif; ?>			
+					</div>
+				</div>
+			</div>   
+                        </div>
+ <?php endif; ?>          

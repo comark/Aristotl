@@ -1,0 +1,34 @@
+
+<?php \Laravel\Section::start('title'); ?>
+ <?php if (isset ($page_title)): ?>
+   <?php echo  $page_title ; ?>
+ <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('header'); ?>
+  <?php if( isset($section_header) ): ?>
+  <?php echo  $section_header ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('carousel'); ?>
+  <?php if( isset($section_carousel) ): ?>
+  <?php echo  $section_carousel ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('content'); ?>
+  <?php if( isset($notify_content) ): ?>
+  <?php echo  $notify_content ; ?>
+  <?php endif; ?>
+  <?php if( isset($section_content) ): ?>
+  <?php echo  $section_content ; ?>
+  <?php endif; ?> 
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('footer'); ?>
+  <?php if( isset($section_footer) ): ?>
+  <?php echo  $section_footer ; ?>
+  <?php endif; ?>
+<?php \Laravel\Section::stop(); ?>
+<?php echo view('treasury::layouts/web_base')->with(get_defined_vars())->render(); ?>

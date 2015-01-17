@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <?php echo  Section::yield_content('title') ; ?>
+
+  <?php echo  Asset::container('first')->styles() ; ?>
+  <?php echo  Asset::container('middle')->styles() ; ?>
+  <?php echo  Asset::styles() ; ?>
+  <?php echo  Asset::container('last')->styles() ; ?>
+  <link rel="shortcut icon" href="<?php echo URL::to('admin_assets/img/favicon.ico') ?>">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+<script type="text/javascript">var BASE = "<?php echo  URL::base() ; ?>";</script>
+  <?php echo  Asset::container('first')->scripts() ; ?>
+  <?php echo  Asset::container('middle')->scripts() ; ?>
+  <?php echo  Asset::scripts() ; ?>
+  <?php echo  Asset::container('last')->scripts() ; ?>
+  
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <?php echo   Section::yield_content('header') ; ?>
+    </nav>
+
+    <?php echo  Section::yield_content('carousel') ; ?>
+    
+    <!-- Page Content -->
+    <div class="container">
+
+   <?php echo  Section::yield_content('content') ; ?>
+
+        <hr>
+
+
+
+    </div>
+    <!-- /.container -->
+
+        <!-- Footer -->
+        <footer>
+    <?php echo  Section::yield_content('footer') ; ?>
+        </footer>
+
+</body>
+
+</html>

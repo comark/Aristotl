@@ -1,0 +1,14 @@
+2015-01-09 18:43:51 ERROR - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'icta.sessions' doesn't exist
+
+SQL: SELECT * FROM `sessions` WHERE `id` = ? LIMIT 1
+
+Bindings: array (
+  0 => '1Qp54BV0xgnDcE7ytwLHsugtdCVa6ZWt0w33rslR',
+) in E:\wamp\www\icta\zroot\laravel\database\connection.php on line 263
+2015-01-09 19:27:21 ERROR - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'icta.sessions' doesn't exist
+
+SQL: SELECT * FROM `sessions` WHERE `id` = ? LIMIT 1
+
+Bindings: array (
+  0 => 'dllRfTMF3qVIJcn5Ejqyjs819wR9UAEnGwYt6dXZ',
+) in E:\wamp\www\icta\zroot\laravel\database\connection.php on line 263

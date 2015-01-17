@@ -1,0 +1,14 @@
+2014-12-19 09:11:00 ERROR - Missing argument 2 for Laravel\Config::file(), called in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 13 and defined in F:\wamp\www\chase_cards\chase_root\laravel\config.php on line 196
+2014-12-19 09:33:55 ERROR - Undefined variable: admin_url in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 86
+2014-12-19 09:38:46 ERROR - Undefined offset: 1 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 156
+2014-12-19 09:39:42 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 156
+2014-12-19 09:39:42 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 156
+2014-12-19 09:39:43 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 156
+2014-12-19 09:39:43 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 156
+2014-12-19 09:39:58 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 157
+2014-12-19 09:39:59 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 157
+2014-12-19 09:39:59 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 157
+2014-12-19 09:40:00 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 157
+2014-12-19 09:40:01 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 157
+2014-12-19 09:40:01 ERROR - Undefined offset: 2 in F:\wamp\www\chase_cards\chase_root\bundles\admin\routes.php on line 157
+2014-12-19 16:28:26 ERROR - Class 'Modern_Base_Controller' not found in F:\wamp\www\chase_cards\chase_root\bundles\modern\controllers\home.php on line 9

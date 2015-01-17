@@ -1,0 +1,11 @@
+<?php \Laravel\Section::start('title'); ?>
+Notifications
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('form-title'); ?>
+<h2>Notifications</h2>
+<?php \Laravel\Section::stop(); ?>
+
+<?php \Laravel\Section::start('form-content'); ?>
+<p style="padding-top:20px; padding-left: 30px; padding-bottom: 5px; padding-right: 30px; "><?php echo  Session::get('notifications') ; ?> </p>
+<?php \Laravel\Section::stop(); ?>

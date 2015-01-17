@@ -1,0 +1,46 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+
+<head>
+    
+   <?php echo  Section::yield_content('title') ; ?>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <?php echo  Asset::container('first')->styles() ; ?>
+  <?php echo  Asset::container('middle')->styles() ; ?>
+  <?php echo  Asset::styles() ; ?>
+  <?php echo  Asset::container('last')->styles() ; ?>
+  
+  
+  <link rel="shortcut icon" href="<?php echo URL::to('treasury/images/favicon.ico') ?>">
+<script type="text/javascript">var BASE = "<?php echo  URL::base() ; ?>";</script>
+  <?php echo  Asset::container('first')->scripts() ; ?>  
+
+</head>  
+
+<body>
+<!-- Page Loader -->
+<div id="pageloader">
+	<div class="loader-item fa fa-spin colored-border"></div>
+</div>    
+
+  
+      <?php echo   Section::yield_content('header') ; ?>
+       
+      <?php echo  Section::yield_content('content') ; ?>
+
+      <?php echo  Section::yield_content('footer') ; ?>
+
+        
+  
+  
+
+  <?php echo  Asset::container('middle')->scripts() ; ?>
+  <?php echo  Asset::scripts() ; ?>
+  <?php echo  Asset::container('last')->scripts() ; ?>
+
+</body>
+</html>

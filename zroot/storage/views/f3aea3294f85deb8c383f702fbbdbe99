@@ -1,0 +1,115 @@
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h3><i class="icon-th-list"></i> 
+                  <?php if (isset($data['form_title'])): ?>
+                    <?php echo  $data['form_title'] ; ?>
+                  <?php endif; ?>
+                </h3>
+							</div>
+							<div class="box-content nopadding">
+								<form action="<?php echo  URL::base() ; ?>/<?php echo Config::get('admin::config.admin_url'); ?><?php echo  $data['submit_url'] ; ?>" enctype="multipart/form-data" method="POST"  class='form-validate form-horizontal form-bordered' id="editcreate">
+                      <?php if ( Session::get('myerrors') ): ?>
+                        <div class="control-group error">
+                          <div class="controls">
+                           <span class="help-block error" style=""><?php echo  Session::get('myerrors') ; ?></span>
+                          </div>
+                        </div>
+                      <?php endif; ?>
+                      <?php if ( count($errors->messages) > 0 ): ?>
+                        <div class="control-group error">
+                          <label for="errors" class="control-label">Errors</label>
+                          <div class="controls">
+                          <?php foreach ( $errors->messages as $key => $val): ?>  
+                          <span class="help-block error" style=""><?php echo  $val[0]; ?></span>
+                          <?php endforeach; ?>
+                          </div>
+                        </div>
+                      <?php endif; ?>
+    <?php if(isset($data['input_items'])): ?>
+    <?php foreach ($data['input_items'] as $data_key => $data_val): ?>
+    <?php if ( isset($data_val['title']) && count($data_val['title']) > 0 ): ?>
+    <?php foreach ( $data_val['title'] as $title ): ?>
+    <?php echo  $title ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>                 
+    <?php if ( isset($data_val['text']) && count($data_val['text']) > 0 ): ?>
+    <?php foreach ( $data_val['text'] as $text ): ?>
+    <?php echo  $text ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    <?php if ( isset($data_val['datetime']) && count($data_val['datetime']) > 0 ): ?>
+    <?php foreach ( $data_val['datetime'] as $datetime ): ?>
+    <?php echo  $datetime ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>                      
+    <?php if ( isset($data_val['textarea']) && count($data_val['textarea']) > 0 ): ?>
+    <?php foreach ( $data_val['textarea'] as $textarea ): ?>
+    <?php echo  $textarea ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    <?php if ( isset($data_val['select']) && count($data_val['select']) > 0 ): ?>
+    <?php foreach ( $data_val['select'] as $select ): ?>
+    <?php echo  $select ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    <?php if ( isset($data_val['multiple']) && count($data_val['multiple']) > 0 ): ?>
+    <?php foreach ( $data_val['multiple'] as $multiple ): ?>
+    <?php echo  $multiple ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?> 
+    <?php if ( isset($data_val['password']) && count($data_val['password']) > 0 ): ?>
+    <?php foreach ( $data_val['password'] as $password ): ?>
+    <?php echo  $password ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    <?php if ( isset($data_val['file']) && count($data_val['file']) > 0 ): ?>
+    <?php foreach ( $data_val['file'] as $file ): ?>
+    <?php echo  $file ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?> 
+    
+    <?php if ( isset($data_val['upload']) && count($data_val['upload']) > 0 ): ?>
+    <?php foreach ( $data_val['upload'] as $upload ): ?>
+    <?php echo  $upload ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>     
+    
+    <?php if ( isset($data_val['checkbox']) && count($data_val['checkbox']) > 0 ): ?>
+    <?php foreach ( $data_val['checkbox'] as $checkbox ): ?>
+    <?php echo  $checkbox ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    <?php if ( isset($data_val['hr']) && count($data_val['hr']) > 0 ): ?>
+    <?php foreach ( $data_val['hr'] as $hr ): ?>
+    <?php echo  $hr ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>                    
+    <?php if ( isset($data_val['hidden']) && count($data_val['hidden']) > 0 ): ?>
+    <?php foreach ( $data_val['hidden'] as $hidden ): ?>
+    <?php echo  $hidden ; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+
+    <?php endforeach; ?>
+    <?php endif; ?>                      
+									<div class="form-actions">
+                    <?php if( isset($data['saveonly'])): ?>
+                      <input type="submit" name="save" class="btn btn-primary" value="Save Changes">
+                    <?php elseif ( isset($data['submit'])): ?>
+                      <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+                    <?php else: ?>
+                      <?php if ( isset($data['action']) && $data['action'] == 'edit' ): ?>
+                      <input type="submit" name="edit" class="btn btn-primary" value="Save Changes">
+                      <input type="submit" name="delete" class="btn btn-inverse" value="Delete">
+                      <?php elseif ( isset($data['action']) && $data['action'] == 'create' ): ?>
+                      <input type="submit" name="create" class="btn btn-primary" value="Create">
+                      <?php endif; ?>                     
+                    <?php endif; ?>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>

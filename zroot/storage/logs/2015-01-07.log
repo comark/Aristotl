@@ -1,0 +1,6 @@
+2015-01-07 18:00:14 ERROR - Illegal string offset 'type' in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 81
+2015-01-07 18:01:26 ERROR - Illegal string offset 'type' in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 81
+2015-01-07 20:02:16 ERROR - Missing argument 4 for Ictacustom_Home_Controller::_form_data(), called in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 37 and defined in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 108
+2015-01-07 20:03:10 ERROR - Undefined index: url in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 89
+2015-01-07 20:03:33 ERROR - Call to a member function move() on a non-object in E:\wamp\www\icta\zroot\laravel\input.php on line 231
+2015-01-07 20:04:19 ERROR - Class 'IctaM\Ictacustom' not found in E:\wamp\www\icta\zroot\bundles\ictacustom\controllers\home.php on line 98

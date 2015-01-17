@@ -1,0 +1,32 @@
+				<div class="row-fluid">
+          <div class="span12">
+            <div class="box box-color box-bordered lightred">
+              
+              <div class="box-title">
+								<h3><i class="icon-remove"></i> 
+                  <?php if (isset($data['form_title'])): ?>
+                    <?php echo  $data['form_title'] ; ?>
+                  <?php endif; ?>
+                </h3>
+							</div>
+              <div class="box-content">
+               <div class=""basic-margin>
+                 <form action="<?php echo URL::base(); ?>/<?php echo Config::get('admin::config.admin_url'); ?>ictacustom/delete" enctype="multipart/form-data" method="POST" class='form-validate form-bordered' id="delete">
+                   <p>
+                   <?php if ( isset($data['text'] )): ?>
+                     <?php echo  $data['text'] ; ?>
+                   <?php endif; ?>
+                   </p>
+                    <div class="form-actions">
+                      <input type="hidden" name="type" value="<?php echo  $data['type']; ?>">
+                      <input type="hidden" name="id" value="<?php echo  $data['id']; ?>">
+                      <input type="submit" name="delete" class="btn btn-primary" value="Delete">
+                      <a href="<?php echo  URL::base() ; ?>/<?php echo Config::get('admin::config.admin_url'); ?>ictacustom/edit/<?php echo  $data['type']; ?>/<?php echo  $data['id' ]; ?>" class="btn btn-inverse" >Cancel</a>
+                    </div>               
+                 </form>
+               </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
