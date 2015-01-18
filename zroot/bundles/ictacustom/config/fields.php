@@ -20,7 +20,8 @@ return array(
               'publications' => 'Publications',
               'reports'     => 'Reports',
               'bills'       => 'Bills',
-              'publicsector' => 'Public Sector Hearing and Policies',
+              'publicsector' => 'Public Sector Hearing',
+              'policies'    => 'Policies',
               'resources'=>'Resources',
               'tenders' => 'Tenders',
               'downloads' => 'Downloads',
@@ -53,9 +54,14 @@ return array(
     ), /*resources*/  
     'publicsector' => array(
        'name' => 'publicsector',
-       'title' => 'Public Sector Hearing and Policies',
+       'title' => 'Public Sector Hearing',
        'default' => true, 
-    ), /*resources*/     
+    ), /*resources*/  
+    'policies' => array(
+       'name' => 'policies',
+       'title' => 'Policies',
+       'default' => true, 
+    ), /*resources*/    
     'resources' => array(
        'name' => 'resources',
        'title' => 'Resources',

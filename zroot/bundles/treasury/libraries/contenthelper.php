@@ -86,7 +86,7 @@ class ContentHelper{
         if ( $type == 'projects') {
             $view.= View::make($bundle.'::listtpls.projects')->with('data',$data);
         } else if( $type == 'resources'  || $type == 'bills' || $type == 'publications' 
-                || $type == 'publicsector' || $type == 'reports' ){
+                || $type == 'publicsector' || $type == 'reports' || $type == 'policies'){
             $view.= View::make($bundle.'::listtpls.resources')->with('data',$data);
         }
         return $view;
