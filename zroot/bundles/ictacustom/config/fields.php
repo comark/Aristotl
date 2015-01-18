@@ -16,7 +16,11 @@ return array(
                 'required'=>true
             ),
             'options'=> array(
-              ''=>'Select',
+              ''=>'Select',              
+              'publications' => 'Publications',
+              'reports'     => 'Reports',
+              'bills'       => 'Bills',
+              'publicsector' => 'Public Sector Hearing and Policies',
               'resources'=>'Resources',
               'tenders' => 'Tenders',
               'downloads' => 'Downloads',
@@ -32,6 +36,26 @@ return array(
             ),
         ),
     ),
+    'publications' => array(
+       'name' => 'publications',
+       'title' => 'Publications',
+       'default' => true, 
+    ), /*resources*/
+    'reports' => array(
+       'name' => 'reports',
+       'title' => 'Reports',
+       'default' => true, 
+    ), /*resources*/ 
+    'bills' => array(
+       'name' => 'bills',
+       'title' => 'Bills',
+       'default' => true, 
+    ), /*resources*/  
+    'publicsector' => array(
+       'name' => 'publicsector',
+       'title' => 'Public Sector Hearing and Policies',
+       'default' => true, 
+    ), /*resources*/     
     'resources' => array(
        'name' => 'resources',
        'title' => 'Resources',

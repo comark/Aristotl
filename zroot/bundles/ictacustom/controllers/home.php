@@ -398,10 +398,10 @@ class Ictacustom_Home_Controller extends Admin_Base_Controller{
     } 
     
     private function _edit_form_data($post) {
-    Admin\Libraries\ArAssets::form_assets();     
-    Asset::container('first')->add('chosen-js','admin_assets/js/plugins/chosen/chosen.jquery.min.js');
-    Asset::container('first')->add('tinymce-js', 'admin_assets/js/plugins/tinymce/tinymce.min.js');
-    Asset::container('first')->add('content-js','admin_assets/js/content.js');        
+        Admin\Libraries\ArAssets::form_assets();     
+        Asset::container('first')->add('chosen-js','admin_assets/js/plugins/chosen/chosen.jquery.min.js');
+        Asset::container('first')->add('tinymce-js', 'admin_assets/js/plugins/tinymce/tinymce.min.js');
+        Asset::container('first')->add('content-js','admin_assets/js/content.js');        
         $content = unserialize($post->meta);
         
         $check_field = Config::get('ictacustom::fields.'.$post->type);

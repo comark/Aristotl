@@ -17,13 +17,13 @@
 @foreach ( $team as $key=> $val)                                                
 						<div class="team-item">
 							<!-- Img -->
-                                                        @if (IctaL\Helper::validate_meta($val->meta,'image'))
-							<img src="{{ IctaL\Helper::validate_meta($val->meta,'image') }}" width="370"  alt="" class="img-responsive" />
+                                                        @if (TreasuryL\Helper::validate_meta($val->meta,'image'))
+							<img src="{{ TreasuryL\Helper::validate_meta($val->meta,'image') }}" width="370"  alt="" class="img-responsive" />
                                                         @endif
 							<!-- Team Member Details -->
 							<div class="team-content">
 								<h3 class="name">{{ $val->title }}</h3>
-								<h4 class="designation">{{ IctaL\Helper::validate_meta($val->meta,'position') }}</h4>							
+								<h4 class="designation">{{ TreasuryL\Helper::validate_meta($val->meta,'position') }}</h4>							
 							</div>
 						</div>
 @endforeach

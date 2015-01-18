@@ -4,7 +4,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-            <?php foreach (IctaL\Helper::sidebarmenu_helper() as $key=>$val): ?>
+            <?php foreach (TreasuryL\Helper::sidebarmenu_helper() as $key=>$val): ?>
                 <li><a href="<?php echo  URL::base() ; ?>/<?php echo  $val['url']; ?>"><i class="fa fa-angle-right"></i> <?php echo  $val['title']; ?> </a></li>
             <?php endforeach; ?>                                    
                                 </ul>

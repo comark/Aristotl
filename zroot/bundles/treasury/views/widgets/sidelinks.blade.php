@@ -4,7 +4,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-            @foreach (IctaL\Helper::sidebarmenu_helper() as $key=>$val)
+            @foreach (TreasuryL\Helper::sidebarmenu_helper() as $key=>$val)
                 <li><a href="{{ URL::base() }}/{{ $val['url']}}"><i class="fa fa-angle-right"></i> {{ $val['title']}} </a></li>
             @endforeach                                    
                                 </ul>

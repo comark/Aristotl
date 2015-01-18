@@ -105,12 +105,12 @@ class Treasury_Home_Controller extends Treasury_Base_Controller{
           $this->sect['title'] = 'News'; 
           $content = View::make('treasury::singletpls.singlepost')->with('data', $active_post);
           
-          $sidebar = IctaL\Helper::make_sidebar();  
+          $sidebar = TreasuryL\Helper::make_sidebar();  
           $this->sect['content'] = View::make('treasury::tpls.page')
                                               ->with('title','News')
                                               ->with('center', $content)
                                               ->with('sidebar',$sidebar);          
-          return IctaL\Helper::make_structure($this->sect);                
+          return TreasuryL\Helper::make_structure($this->sect);                
       } else {
           return Redirect::to('xadmin/pages/notfound');  
       }
@@ -130,12 +130,12 @@ class Treasury_Home_Controller extends Treasury_Base_Controller{
           $this->sect['title'] = Config::get('ictacustom::fields.'.$type.'.title');
           $content = View::make('treasury::singletpls.single'.$type)->with('data', $active_post);
           
-          $sidebar = IctaL\Helper::make_sidebar();  
+          $sidebar = TreasuryL\Helper::make_sidebar();  
           $this->sect['content'] = View::make('treasury::tpls.page')
                                               ->with('title',$this->sect['title'])
                                               ->with('center', $content)
                                               ->with('sidebar',$sidebar);          
-          return IctaL\Helper::make_structure($this->sect);                
+          return TreasuryL\Helper::make_structure($this->sect);                
       } else {
           return Redirect::to('xadmin/pages/notfound');  
       }

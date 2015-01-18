@@ -17,13 +17,13 @@
 <?php foreach ( $team as $key=> $val): ?>                                                
 						<div class="team-item">
 							<!-- Img -->
-                                                        <?php if (IctaL\Helper::validate_meta($val->meta,'image')): ?>
-							<img src="<?php echo  IctaL\Helper::validate_meta($val->meta,'image') ; ?>" width="370"  alt="" class="img-responsive" />
+                                                        <?php if (TreasuryL\Helper::validate_meta($val->meta,'image')): ?>
+							<img src="<?php echo  TreasuryL\Helper::validate_meta($val->meta,'image') ; ?>" width="370"  alt="" class="img-responsive" />
                                                         <?php endif; ?>
 							<!-- Team Member Details -->
 							<div class="team-content">
 								<h3 class="name"><?php echo  $val->title ; ?></h3>
-								<h4 class="designation"><?php echo  IctaL\Helper::validate_meta($val->meta,'position') ; ?></h4>							
+								<h4 class="designation"><?php echo  TreasuryL\Helper::validate_meta($val->meta,'position') ; ?></h4>							
 							</div>
 						</div>
 <?php endforeach; ?>

@@ -6,7 +6,7 @@
         <ul class="post_meta_links">
             <li>
                 <a href="#" class="date">                            
-                    {{ IctaL\ContentHelper::blog_date_helper($data->created_at) }}
+                    {{ TreasuryL\ContentHelper::blog_date_helper($data->created_at) }}
                 </a>
             </li>
         </ul>

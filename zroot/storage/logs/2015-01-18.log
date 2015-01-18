@@ -1,0 +1,4 @@
+2015-01-18 12:37:37 ERROR - Class 'IctaL\Helper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 20
+2015-01-18 12:37:40 ERROR - Missing argument 1 for Laravel\Bundle::{closure}() in E:\wamp\www\treasury\zroot\application\routes.php on line 72
+2015-01-18 12:38:34 ERROR - Class 'IctaL\Helper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 20
+2015-01-18 12:39:37 ERROR - Class 'IctaL\Helper' not found in E:\wamp\www\treasury\zroot\laravel\view.php(366) : eval()'d code on line 20

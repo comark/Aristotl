@@ -6,19 +6,19 @@
                 <ul class="post_meta_links">
                     <li>
                         <a href="#" class="date">                            
-                            {{ IctaL\ContentHelper::blog_date_helper($data->created_at) }}
+                            {{ TreasuryL\ContentHelper::blog_date_helper($data->created_at) }}
                         </a>
                     </li>
                 </ul>
             <div class="image_frame">
-                @if(IctaL\ContentHelper::custom_meta_object('image',$data->meta))
-                <img src="{{ URL::base()}}/{{ IctaL\ContentHelper::custom_meta_object('image',$data->meta) }}" style="width:100%;" alt="" />
+                @if(TreasuryL\ContentHelper::custom_meta_object('image',$data->meta))
+                <img src="{{ URL::base()}}/{{ TreasuryL\ContentHelper::custom_meta_object('image',$data->meta) }}" style="width:100%;" alt="" />
                 @endif
             </div>
              <div class="clearfix"></div>
              <div class="margin_top1"></div>
             <p>
-                {{ IctaL\ContentHelper::custom_meta_object('long_description',$data->meta) }}
+                {{ TreasuryL\ContentHelper::custom_meta_object('long_description',$data->meta) }}
             </p>
             </div>
         </div><!-- /# end post -->
