@@ -85,9 +85,13 @@ class ContentHelper{
         $view = '';
         if ( $type == 'projects') {
             $view.= View::make($bundle.'::listtpls.projects')->with('data',$data);
-        } else if( $type == 'resources'  || $type == 'bills' || $type == 'publications' 
-                || $type == 'publicsector' || $type == 'reports' || $type == 'policies'){
-            $view.= View::make($bundle.'::listtpls.resources')->with('data',$data);
+        } else {
+            $array_v = array('resources', 'bills', 'publications','publicsector','reports','policies','tenders','regulations');
+             foreach ($array_v as $key=>$val){
+                 if($type == $val) {
+                        $view.= View::make($bundle.'::listtpls.resources')->with('data',$data);
+                 }
+             }
         }
         return $view;
     }    

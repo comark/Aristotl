@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<!-- Top Navbar Begins -->
-				<div  class="navbar">
+				<div  class="navbar ">
 					<!-- Mail and Phone Number -->
 					<div class="navbar-header">
 						<ul class="header-top-left">
@@ -34,12 +34,12 @@
 			<div class="row">
 				<div class="col-md-12">
 					<!-- Logo and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-                                            <div class="site-logo"> <a title="Logo" href="#"><img  src="<?php echo  URL::base() ; ?>/treasury/assets/toplogo.png"></a> </div>
+					<div class="navbar-header col-md-4" >
+                                            <div class="site-logo"> <a title="Logo" href="#"><img width="100%;" src="<?php echo  URL::base() ; ?>/treasury/assets/toplogo.png"></a> </div>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"> <span class="menu-box"><span class="menu">Menu</span><i class="flaticon-list50 menu-button"></i></span> </button>
 					</div>
 					<!-- Collect the nav links, buttons and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" style="">
                                             
 <?php if (isset($content['menu']) ): ?>
   <?php echo  $content['menu'] ; ?>

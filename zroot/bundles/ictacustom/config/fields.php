@@ -33,7 +33,8 @@ return array(
               'slideshow' => 'Slideshow',
               'events' => 'Events',
               'press' => 'Press Releases',
-              'speeches' => 'Speeches',
+              'speeches' => 'Speeches',                
+              'regulations' => 'Regulations',
             ),
         ),
     ),
@@ -100,6 +101,11 @@ return array(
     'speeches' => array(
        'name' => 'speeches',
        'title' => 'Speeches',
+       'default' => true,
+    ), /*tenders*/   
+    'regulations' => array(
+       'name' => 'regulations',
+       'title' => 'Regulations',
        'default' => true,
     ), /*tenders*/    
     'team' => array(
