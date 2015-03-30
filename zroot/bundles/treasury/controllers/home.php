@@ -19,7 +19,7 @@ class Treasury_Home_Controller extends Treasury_Base_Controller{
        $this->sect['title'] = $this->title;
        $this->sect['menu_active'] = 'home';
        
-       $sections = array('slider','about','teams');
+       $sections = array('slider','about','docs','teams');
       // $sections = array('');
        $secti = '';
        foreach($sections as $sect){
@@ -128,7 +128,8 @@ class Treasury_Home_Controller extends Treasury_Base_Controller{
       }
       if ($active_post) {
           $this->sect['title'] = Config::get('ictacustom::fields.'.$type.'.title');
-          $content = View::make('treasury::singletpls.single'.$type)->with('data', $active_post);
+          //$content = View::make('treasury::singletpls.single'.$type)->with('data', $active_post);
+		  $content = View::make('treasury::listtpls.resources')->with('data', $active_post);
           
           $sidebar = TreasuryL\Helper::make_sidebar();  
           $this->sect['content'] = View::make('treasury::tpls.page')
@@ -160,7 +161,10 @@ class Treasury_Home_Controller extends Treasury_Base_Controller{
          $block.= View::make('treasury::homesections.'.$sect); 
       } else if ($sect == 'about'){
          $block.= View::make('treasury::homesections.'.$sect); 
+      } else if ($sect == 'docs'){
+         $block.= View::make('treasury::homesections.'.$sect); 
       }
+	  
       
       return $block;
    }

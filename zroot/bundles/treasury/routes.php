@@ -10,5 +10,5 @@
  Route::get('/contact', 'treasury::home@contact');
  Route::any('/contactsubmit','treasury::api@contactsubmit');
  Route::get('/blogitem/(:any?)', 'treasury::home@blog'); 
- 
+ Route::get('/type/(:any?)/(:any?)', 'treasury::home@customsingle'); 
  

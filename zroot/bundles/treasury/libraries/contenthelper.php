@@ -47,6 +47,30 @@ class ContentHelper{
 
     } 
 
+    public static function get_front_blogs($type=null){
+       $query = Database::table('contentposts')
+                ->where('contentposts.status','!=','delete');
+   
+           $query->where('type','=','post');
+	   $query->take(5);
+       
+       $query->order_by('contentposts.id','desc');
+
+       $result = $query->get();
+
+       $data = array();
+
+       $data['data'] = $result;
+
+
+       if ( isset ( $data['data'])  ) {
+           return $data;
+       } else {
+           return false;
+       }
+
+    }
+
     public static function get_custom($type=null){
        $query = Database::table('ictacustom')
                 ->where('ictacustom.status','!=','delete');
@@ -73,6 +97,56 @@ class ContentHelper{
        }
 
     } 
+	
+    public static function get_front_custom($type=null){
+       $query = Database::table('ictacustom')
+                ->where('ictacustom.status','!=','delete');
+       if ($type){
+           $query->where('type','=',$type);
+	   $query->take(5);
+       }
+       $query->order_by('ictacustom.id','desc');
+       $result = $query->get();
+
+       $data['data'] = $result;
+
+       if ( isset ( $data['data'])  ) {
+           return $data;
+       } else {
+           return false;
+       }
+
+    }	
+	
+	public static function display_front_custom($type){
+
+	$list = '';
+		if (\TreasuryL\ContentHelper::get_front_custom($type)) :
+			foreach ( \TreasuryL\ContentHelper::get_front_custom($type) as $data_big_key=>$data_big_val )  :       
+				if(isset($data_big_val) && $data_big_key == 'data') :
+					foreach( $data_big_val as $data):
+					$list.='<li style="margin-bottom:4px; padding-bottom:4px; border-bottom:1px solid #ccc;"><a href='. \TreasuryL\ContentHelper::custom_url_helper($data).'>'.$data->title.'</a></li> ';            
+					endforeach;
+				endif;
+			endforeach;
+		endif;
+	return $list;
+	}
+
+	public static function display_news_custom(){
+
+	$list = '';
+		if (\TreasuryL\ContentHelper::get_front_blogs()) :
+			foreach ( \TreasuryL\ContentHelper::get_front_blogs() as $data_big_key=>$data_big_val )  :       
+				if(isset($data_big_val) && $data_big_key == 'data') :
+					foreach( $data_big_val as $data):
+					$list.='<li style="margin-bottom:4px; padding-bottom:4px; border-bottom:1px solid #ccc;"><a href='. URL::base().'/blogitem/'.$data->guid.'>'.$data->title.'</a></li> ';            
+					endforeach;
+				endif;
+			endforeach;
+		endif;
+	return $list;
+	}
     
     public static function single_blog($data){
         $bundle = 'treasury';

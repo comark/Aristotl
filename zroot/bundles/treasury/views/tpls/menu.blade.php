@@ -26,11 +26,11 @@
 
                        
                        @if(isset($val['children']) && ( $val['children'] > 0 ) )
-                       <ul role="menu" class="dropdown-menu collapse-3 collapse">
+                       <ul role="menu" class="dropdown-menu collapse-3 collapse" >
                           @foreach( $val['children'] as $child )
                           
                             <li> 
-                                <a href="{{ URL::base() }}/{{ $child['url'] }}">{{ $child['title'] }}</a>
+                                <a style="white-space:normal !important;" href="{{ URL::base() }}/{{ $child['url'] }}">{{ $child['title'] }}</a>
                              </li>
                           
                           @endforeach
@@ -46,4 +46,3 @@
         
         
         
-                
