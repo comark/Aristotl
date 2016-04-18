@@ -1,0 +1,39 @@
+<!-- Top Slider Begins -->
+<section class="top-slider">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+
+		<!-- Wrapper for slides -->
+		<div class="container">
+			<div class="carousel-inner">
+    <?php if (AristotlL\ContentHelper::slider_helper() ): ?>
+      <?php foreach( AristotlL\ContentHelper::slider_helper() as $skey=>$slide ): ?>
+     
+                    <?php if($skey == 1): ?>
+                        <div class="item active">
+                    <?php else: ?>
+                        <div class="item">
+                    <?php endif; ?>
+                  
+				
+					<div class="row">
+						<div class="carousel-caption" style="width:300px;">
+                                                    <?php if(isset($slide['title'])): ?>
+							<h1><?php echo  $slide['title'] ; ?></h1>
+                                                   <?php endif; ?>
+                                                   
+                                                   <?php if(isset($slide['description'])): ?>
+							<p><?php echo  $slide['description'] ; ?></p>
+                                                   <?php endif; ?>
+						</div>
+						<div class="col-md-8 col-md-offset-4"> <img src="<?php echo URL::base(); ?>/<?php echo  $slide['image'] ; ?>" class="img-responsive"  alt="slider-1"> </div>
+					</div>
+				</div>
+      <?php endforeach; ?>
+    <?php endif; ?>
+                        </div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <i class="fa fa-angle-right"></i> </a> </section>
+<!-- Top Slider Ends -->

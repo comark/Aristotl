@@ -42,13 +42,9 @@ return array(
         'users' => array('auto' => true),
         'messages' => array('auto' => true),
         'content' => array('auto' => true),    
-        //'www' => array('auto' => true), 
         'icta' => array('auto' => true),
         'ictacustom' => array('auto' => true),
-        'treasury' => array('auto' => true),
+        'aristotl' => array('auto' => true),
     
-    /******************************************/
-        //'institution' => array('auto'=>true),
-        //'psa' => array('auto'=>true)
 
 );

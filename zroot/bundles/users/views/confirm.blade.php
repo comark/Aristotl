@@ -11,7 +11,7 @@
 							</div>
               <div class="box-content">
                <div class=""basic-margin>
-                 <form action="{{URL::base()}}/users/delete" enctype="multipart/form-data" method="POST" class='form-validate form-bordered' id="delete">
+                 <form action="{{URL::base()}}/{{Config::get('admin::config.admin_url')}}users/delete" enctype="multipart/form-data" method="POST" class='form-validate form-bordered' id="delete">
                    <p>
                    @if ( isset($data['text'] ))
                      {{ $data['text'] }}
@@ -21,7 +21,7 @@
                      
                       <input type="hidden" name="id" value="{{ $data['id']}}">
                       <input type="submit" name="user_delete" class="btn btn-primary" value="Delete User">
-                      <a href="{{ URL::base() }}/users/edit/{{ $data['id' ]}}" class="btn btn-inverse" >Cancel</a>
+                      <a href="{{ URL::base() }}/{{Config::get('admin::config.admin_url')}}users/edit/{{ $data['id' ]}}" class="btn btn-inverse" >Cancel</a>
                     </div>               
                  </form>
                </div>

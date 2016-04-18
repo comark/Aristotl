@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 return array (
-  'site_title' => 'The National Treasury',
+  'site_title' => 'Aristotl',
   'admin_url'  => 'xadmin/',  
   'admin_register' => true,
   'super_perms' => array(

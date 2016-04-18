@@ -77,7 +77,7 @@ class Helper{
   public static function get_tpls(){
     $tpls = array();
     $count = 0;
-    $tpl_path = path('bundle').'treasury/views/customtpls/';
+    $tpl_path = path('bundle').'aristotl/views/customtpls/';
     $path = $tpl_path.'*.blade.php';
     $files = glob($path);
     if ( count($files) > 0 ) {

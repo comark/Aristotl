@@ -7,7 +7,8 @@ class Users_Home_Controller extends Admin_Base_Controller {
     private $msg_email;
     private $msg_name;
     private $site_title;
-
+    private $admin_url;
+     
     public function __construct() {
         parent::__construct();
         $this->main_view = View::make('admin::index');
@@ -15,6 +16,7 @@ class Users_Home_Controller extends Admin_Base_Controller {
         $this->msg_email = Config::get('admin::mail.outgoing.email');
         $this->msg_name = Config::get('admin::mail.outgoing.name');
         $this->site_title = Config::get('admin::config.site_title');
+        $this->admin_url =  Config::get('admin::config.admin_url');
     }
 
     public function action_index() {
@@ -45,12 +47,12 @@ class Users_Home_Controller extends Admin_Base_Controller {
 
         $data = array();
         if ($id == null) {
-            return Redirect::to('users');
+            return Redirect::to($this->admin_url.'users');
         }
         $current_user_id = Sentry::user()->get('id');
 
         if ($current_user_id == $id) {
-            return Redirect::to('xprofile');
+            return Redirect::to($this->admin_url.'xprofile');
         }
 
         try {
@@ -82,13 +84,13 @@ class Users_Home_Controller extends Admin_Base_Controller {
         $input = Input::all();
 
         if (!$input) {
-            return Redirect::to('users');
+            return Redirect::to($this->admin_url.'users');
         }
 
         $user_id = Input::get('id');
 
         if (Input::get('user_delete')) {
-            return Redirect::to('users/confirmdelete/' . $user_id);
+            return Redirect::to($this->admin_url.'users/confirmdelete/' . $user_id);
         }
         $pass_req = (empty($user_id)) ? 'required|' : '';
         $redirect = (!empty($user_id)) ? 'users/edit/' . $user_id : 'create';
@@ -214,17 +216,17 @@ class Users_Home_Controller extends Admin_Base_Controller {
         if (array_key_exists('errors', $data)) {
           return Redirect::to($redirect)->with('myerrors', $data['errors']);
         } else {
-          return Redirect::to('users/allusers')->with('notes', $notifications);
+          return Redirect::to($this->admin_url.'users/allusers')->with('notes', $notifications);
         }
     }
 
     public function action_confirmdelete($id = null) {
         if ($id == null) {
-            return Redirect::to('users');
+            return Redirect::to($this->admin_url.'users');
         }
         // should not delete_self
         if (Sentry::user()->get('id') == $id) {
-            return Redirect::to('users');
+            return Redirect::to($this->admin_url.'users');
         }
 
         $data = array();
@@ -264,7 +266,7 @@ class Users_Home_Controller extends Admin_Base_Controller {
         $input = Input::all();
 
         if (!$input) {
-            return Redirect::to('users');
+            return Redirect::to($this->admin_url.'users');
         }
 
         try {
@@ -275,7 +277,7 @@ class Users_Home_Controller extends Admin_Base_Controller {
         }
 
         if (array_key_exists('errors', $data)) {
-            return Redirect::to('users/edit/' . $id)->with('myerrors', $data['errors']);
+            return Redirect::to($this->admin_url.'users/edit/' . $id)->with('myerrors', $data['errors']);
         } else {
             $notifications = array();
             $notifications['class'] = 'success';
@@ -315,9 +317,28 @@ class Users_Home_Controller extends Admin_Base_Controller {
 
                 $set_groups = $created_user->groups();
                 $frontend_only = ( count($set_groups) == 1 && $set_groups[0]['name'] == 'frontend_user') ? true : false;
-                $link = ($frontend_only == true) ? str_replace('admin.', '', URL::base()) : URL::base();
+                $link = ($frontend_only == true) ? str_replace('xadmin/', '', URL::base()) : URL::base();
+                if ( $frontend_only == true ){
+                    $link = URL::base();
+                } else {
+                    $link = URL::base().Config::get('admin::config.admin_url');
+                }
                 $admin = ($frontend_only == false) ? 'x' : '';
-                $link = $activation ? $link . '/' . $admin . 'activate/' . $user['hash'] : $link . '/' . $admin . 'login';
+                
+                if ($activation) {
+                    if ( $frontend_only == false) {
+                        $link = $link.'/xactivate/'.$user['hash'];
+                    } else {
+                        $link = $link.'/account/activate/'.$user['hash'];
+                    }
+                } else {
+                    if ($frontend_only == false ){
+                        $link = $link.'/xlogin';
+                    } else {
+                        $link = $link.'/account/login';
+                    }
+                }
+                //$link = $activation ? $link . '/' . $admin . 'activate/' . $user['hash'] : $link . '/' . $admin . 'login';
                 $tpl['link'] = $link;
 
                 $text = "Your account on " . $this->site_title . " has been successfully created.<br> Use the link below to login<br>";
@@ -327,7 +348,7 @@ class Users_Home_Controller extends Admin_Base_Controller {
               
                 $message = Message::to($created_user->get('email'))
                         ->from($this->msg_email, $this->msg_name)
-                        ->subject('Activation success')
+                        ->subject('Account created')
                         ->body($view)
                         ->html(true)
                         ->send();
@@ -345,7 +366,7 @@ class Users_Home_Controller extends Admin_Base_Controller {
         }
 
         if (array_key_exists('errors', $data)) {
-            return Redirect::to('users/create')->with('myerrors', $data['errors']);
+            return Redirect::to($this->admin_url.'users/create')->with('myerrors', $data['errors']);
         } else {
            return true;
           //  $this->_list_data('all', 'All Users');

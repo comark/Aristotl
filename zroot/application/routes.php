@@ -113,12 +113,12 @@ if ($docs) {
   });     
 }else {
     
- Route::get('/', 'treasury::home@index');    
+ Route::get('/', 'aristotl::home@index');    
  Route::get('/xadmin', function(){
    $admin_url = Config::get('admin::config.admin_url');
    return Redirect::to($admin_url.'xlogin');
  });
  
- Route::get('/xadmin/pages/notfound', 'treasury::home@404');  
+ Route::get('/xadmin/pages/notfound', 'aristotl::home@404');  
 } 
 

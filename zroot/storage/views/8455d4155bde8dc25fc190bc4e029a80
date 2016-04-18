@@ -1,0 +1,43 @@
+<!-- Team Section Begins -->
+<section id="team" class=" slant-angle">
+
+	<div class="section-inner" style="padding:0;">
+
+		<!-- Screenshot Carousel Begins -->
+		<div class="container slider-container">
+			<div class="row">
+				<div class="col-xs-12 animated" data-animation="fadeInUp" data-animation-delay="500">
+					<!-- Carousel Slider Container Begins -->
+					<div id="team-slider" class="">
+						<!-- Item Begins -->
+                                                
+
+<?php if(isset($team) && count($team) > 0): ?>
+
+<?php foreach ( $team as $key=> $val): ?>                                                
+						<div class="team-item">
+							<!-- Img -->
+                                                        <?php if (TreasuryL\Helper::validate_meta($val->meta,'image')): ?>
+							<img src="<?php echo  TreasuryL\Helper::validate_meta($val->meta,'image') ; ?>" width="370"  alt="" class="img-responsive" />
+                                                        <?php endif; ?>
+							<!-- Team Member Details -->
+							<div class="team-content">
+								<h3 class="name"><?php echo  $val->title ; ?></h3>
+								<h4 class="designation"><?php echo  TreasuryL\Helper::validate_meta($val->meta,'position') ; ?></h4>							
+							</div>
+						</div>
+<?php endforeach; ?>
+
+<?php endif; ?>
+						<!-- Item  Ends -->
+						
+					</div>
+					<!-- Carousel Slider Container Ends -->
+				</div>
+			</div>
+		</div>
+		<!-- Screenshot Carousel Ends -->
+	</div>
+	
+</section>
+<!-- Team Section Ends -->

@@ -9,7 +9,7 @@
                 </h3>
 							</div>
 							<div class="box-content nopadding">
-								<form action="{{URL::base()}}/users/submit" enctype="multipart/form-data" method="POST" class='form-validate form-horizontal form-bordered' id="editcreate">
+								<form action="{{URL::base()}}/{{Config::get('admin::config.admin_url')}}users/submit" enctype="multipart/form-data" method="POST" class='form-validate form-horizontal form-bordered' id="editcreate">
                       @if ( Session::get('myerrors') )
                         <div class="control-group error">
                           <div class="controls">

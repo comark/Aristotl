@@ -1,0 +1,48 @@
+
+      
+        <ul class="nav navbar-nav navbar-right">
+            <?php if (isset($menu) && count($menu) > 0 ): ?>
+                    <?php foreach ($menu as $key=>$val): ?>
+
+                         <?php if(isset($val['children']) && ( $val['children'] > 0 ) ): ?>
+                         <li class="dropdown">    
+                                <?php if ( isset($val['class']) && strlen($val['class']) > 0 ): ?>
+                            <a href="<?php echo  URL::base() ; ?>/<?php echo  $val['url'] ; ?>"  class="<?php echo  $val['class'] ; ?> dropdown-toggle"><?php echo  $val['title'] ; ?></a>
+                                <?php else: ?>                             
+                            <a href="<?php echo  URL::base() ; ?>/<?php echo  $val['url'] ; ?>"  class=" dropdown-toggle"><?php echo  $val['title'] ; ?></a>
+                                <?php endif; ?>
+                                
+                            <span class="menu-toggler collapsed" data-toggle="collapse" data-target=".collapse-3">
+                                    <i class="fa fa-angle-down"></i>
+                            </span>                                
+                         <?php else: ?>
+                         <li class="">                             
+                                <?php if ( isset($val['class']) && strlen($val['class']) > 0 ): ?>
+                            <a href="<?php echo  URL::base() ; ?>/<?php echo  $val['url'] ; ?>"  class="<?php echo  $val['class'] ; ?> dropdown-toggle"><?php echo  $val['title'] ; ?></a>
+                                <?php else: ?>                             
+                            <a href="<?php echo  URL::base() ; ?>/<?php echo  $val['url'] ; ?>"  class=" dropdown-toggle"><?php echo  $val['title'] ; ?></a>
+                                <?php endif; ?>  
+                         <?php endif; ?>
+
+                       
+                       <?php if(isset($val['children']) && ( $val['children'] > 0 ) ): ?>
+                       <ul role="menu" class="dropdown-menu collapse-3 collapse" >
+                          <?php foreach( $val['children'] as $child ): ?>
+                          
+                            <li> 
+                                <a style="white-space:normal !important;" href="<?php echo  URL::base() ; ?>/<?php echo  $child['url'] ; ?>"><?php echo  $child['title'] ; ?></a>
+                             </li>
+                          
+                          <?php endforeach; ?>
+                       </ul>
+                       <?php endif; ?>
+                         </li>
+                    <?php endforeach; ?>
+                  <?php endif; ?>
+                  
+        </ul>
+        
+
+        
+        
+        
