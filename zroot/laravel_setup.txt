@@ -4,12 +4,14 @@ Setting up Aristotl on a webserver
 2. Copy or clone the project into a directory under your webserver root e.g aristotldir
 3. Go to /arsitotl/zroot/application/config/database.php and configure the database credentials to match your database
 4. Using command line or terminal change directory into /aristotl/zroot then run the following CLI commands:
-    
+    // Remove any migrations in the application folder
+    a) /arsitotl/applications/migrations/
+
     // This creates the laravel migrations
-    a) php artisan migrate:install
+    b) php artisan migrate:install
 
     // This migrates the database
-    b) php artisan session:table
+    c) php artisan session:table
 
 5. Access to front end: http://localhost/aristotl
 6. Access administrative interface : http://localhost/aristotl/xadmin
