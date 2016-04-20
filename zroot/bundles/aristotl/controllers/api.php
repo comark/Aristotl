@@ -12,25 +12,8 @@ class Aristotl_Api_Controller extends Controller{
      }
      
   public function post_contactsubmit(){
-      /*
-        if( isset($_POST['name']) )
-        {
-                $to = 'malobacomark@gmail.com'; // Replace with your email
 
-                $subject = $_POST['subject'];
-                $message = $_POST['message'] . "\n\n" . 'Regards, ' . $_POST['name'] . '.';
-                $headers = 'From: ' . $_POST['name'] . "\r\n" . 'Reply-To: ' . $_POST['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-
-                $msg = mail($to, $subject, $message, $headers);
-
-                if( $_POST['copy'] == 'on' )
-                {
-                        mail($_POST['email'], $subject, $message, $headers);
-                }
-                
-                return Response::json($msg, 200);
-        } */
-        $to_email = "malobacomark@gmail.com"; // email address to which the form data will be sent
+        $to_email = "info@aristotl.com"; // email address to which the form data will be sent
         $subject = "Contact Request";
         $contact_name = strip_tags($_POST["contact_name"]);
         $contact_email = strip_tags($_POST["contact_email"]);

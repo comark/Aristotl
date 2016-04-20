@@ -179,12 +179,11 @@ View::composer( 'admin::index', function( $view ) {
   }
   $user = Sentry::user();
   $user_id = $user->get('id');
-  //$messages = Admin\Models\Notifications::get_notices($user_id)->get();
-  //$view->nest('user_messages', 'admin::partials.usermessages', array('count' => count($messages), 'messages' => $messages) );
+  
   $view->nest('user','admin::partials.user');  
   $view->nest('nav', 'admin::partials.nav', array('top_menu' => $menu) );
   $view->nest('left_hook','admin::partials.lefthook', array('left_menu' => $menu));
-  //$view->nest('top_hidden', 'admin::partials.tophidden');
+ 
 
   // Explicitly set privilege for admin links
   if ( Sentry::user()->has_access('superuser') ) {

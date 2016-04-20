@@ -63,8 +63,8 @@ return array(
 
 	'logger' => function($exception)
 	{
-                Message::to('info@novato.co.ke')
-                                    ->from('no-reply@novato.co.ke')
+                Message::to('info@aristol.com')
+                                    ->from('no-reply@aristotl.com')
                                     ->subject('Aristotl Error')
                                     ->body($exception)
                                     ->html(false) 

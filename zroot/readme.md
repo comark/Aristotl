@@ -1,11 +1,11 @@
-##  Aristotol MIS
+##  Aristotl MIS
 
-[Aristotol ] Application Framework for Management Information Systems
+[Aristotl ] Application Framework for Management Information Systems
 
-Aristotol is an application meant to be a rapid application deployment platform 
+Aristotl is an application meant to be a rapid application deployment platform 
 that can be used to create Management Information Systems
 
-[Official Website ](http://novato.co.ke)
+[Official Website ](http://github.com/comarkonani)
 
 ## Feature Overview
 
@@ -14,5 +14,26 @@ that can be used to create Management Information Systems
 
 
 ## License
+ 
 
-Aristotol is owned by Novato Consultants (http://novato.co.ke) and any appropriate licensing can be found at the website for
+MIT License
+
+Copyright (c) 2016, Aristotl
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose, without fee, and without a written
+agreement is hereby granted, provided that the above copyright notice
+and this paragraph and the following two paragraphs appear in all
+copies.
+
+IN NO EVENT SHALL Aristotl BE LIABLE TO ANY PARTY FOR DIRECT,
+INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING
+LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+DOCUMENTATION, EVEN IF Aristotl HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+Aristotl SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS
+IS" BASIS, AND Aristotl HAS NO OBLIGATIONS TO PROVIDE
+MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.

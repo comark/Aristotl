@@ -7,7 +7,7 @@
 return array(
    'outgoing' => 
      array(
-         'email' => 'info@novato.co.ke',
+         'email' => 'info@aristotl.com',
          'name'  => Config::get('admin::config.site_title')    
      ),  
 );

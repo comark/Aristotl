@@ -18,23 +18,7 @@ return array(
             'options'=> array(
               ''=>'Select',              
               'publications' => 'Publications',
-              'reports'     => 'Reports',
-              'bills'       => 'Bills',
-              'publicsector' => 'Public Sector Hearing',
-              'policies'    => 'Policies',
-              'resources'=>'Resources',
-              'tenders' => 'Tenders',
-              'downloads' => 'Downloads',
-              'gallery' => 'Gallery',
-              'careers' => 'Careers',
-              'services' => 'Services',
-              'team'     => 'Team',
               'projects' => 'Projects',
-              'slideshow' => 'Slideshow',
-              'events' => 'Events',
-              'press' => 'Press Releases',
-              'speeches' => 'Speeches',                
-              'regulations' => 'Regulations',
             ),
         ),
     ),
@@ -42,97 +26,8 @@ return array(
        'name' => 'publications',
        'title' => 'Publications',
        'default' => true, 
-    ), /*resources*/
-    'reports' => array(
-       'name' => 'reports',
-       'title' => 'Reports',
-       'default' => true, 
-    ), /*resources*/ 
-    'bills' => array(
-       'name' => 'bills',
-       'title' => 'Bills',
-       'default' => true, 
-    ), /*resources*/  
-    'publicsector' => array(
-       'name' => 'publicsector',
-       'title' => 'Public Sector Hearing',
-       'default' => true, 
-    ), /*resources*/  
-    'policies' => array(
-       'name' => 'policies',
-       'title' => 'Policies',
-       'default' => true, 
-    ), /*resources*/    
-    'resources' => array(
-       'name' => 'resources',
-       'title' => 'Resources',
-       'default' => true, 
-    ), /*resources*/
-    'tenders' => array(
-       'name' => 'tenders',
-       'title' => 'Tenders',
-       'default' => true,
-    ), /*tenders*/ 
-    'downloads' => array(
-       'name' => 'downloads',
-       'title' => 'Downloads',
-       'default' => true,
-    ), /*downloads*/
-    'gallery' => array(
-       'name' => 'gallery',
-       'title' => 'Gallery',
-       'default' => true,
-    ), /*gallery*/  
-    'careers' => array(
-       'name' => 'careers',
-       'title' => 'Careers',
-       'default' => true,
-    ), /*tenders*/   
-    'services' => array(
-       'name' => 'services',
-       'title' => 'Services',
-       'default' => true,
-    ), /*tenders*/  
-    'press' => array(
-       'name' => 'press',
-       'title' => 'Press Releases',
-       'default' => true,
-    ), /*press*/ 
-    'speeches' => array(
-       'name' => 'speeches',
-       'title' => 'Speeches',
-       'default' => true,
-    ), /*tenders*/   
-    'regulations' => array(
-       'name' => 'regulations',
-       'title' => 'Regulations',
-       'default' => true,
-    ), /*tenders*/    
-    'team' => array(
-       'name' => 'team',
-       'title' => 'Team',
-       'default' => false,
-       'fields' => array(
-            'title' => array('type'=>'text', 'name'=> 'title', 'title'=> 'Name',
-                             'rules' => array('required'=> 'true')
-                ),       
-            'position' => array('type'=>'text', 'name'=> 'position', 'title'=> 'Title',
-                             'rules' => array('required'=> 'true')
-                ), 
-            'order' => array('type'=>'text', 'name'=> 'order', 'title'=> 'Order',
-                             'rules' => array('required'=> 'true')
-                ),  
-            'image' => array('type'=>'file', 'name'=> 'image', 'title'=> 'Image'),
-            'status' => array('type'=>'select', 'name'=>'status', 'title'=> 'Status', 
-                           'options' => array(
-                               'draft' => 'draft',
-                               'publish' => 'publish',
-                               'delete' => 'delete',
-                           )
-                ),           
-       ) 
-    ), /*team*/
-    
+    ), /*publications*/
+
     'projects' => array(
        'name' => 'projects',
        'title' => 'Projects',
@@ -157,60 +52,9 @@ return array(
                 ),           
        ) 
     ), /*team*/     
+
     
-    'slideshow' => array(
-       'name' => 'slideshow',
-       'title' => 'Slideshow',
-       'default' => false,
-       'fields' => array(
-            'title' => array('type'=>'text', 'name'=> 'title', 'title'=> 'Title',
-                             'rules' => array('required'=> 'true')
-                ),   
-            'description' => array('type'=>'text', 'name'=> 'description', 'title'=> 'Description',
-                             'rules' => array('required'=> 'true')
-                ),
-            'link' => array('type'=>'text', 'name'=> 'link', 'title'=> 'Link',
-                ),           
-            'image' => array('type'=>'file', 'name'=> 'image', 'title'=> 'Image'),
-            'order' => array('type'=>'text', 'name'=> 'order', 'title'=> 'Order'),
-            'status' => array('type'=>'select', 'name'=>'status', 'title'=> 'Status', 
-                           'options' => array(
-                               'draft' => 'draft',
-                               'publish' => 'publish',
-                               'delete' => 'delete',
-                           )
-                ),           
-       ) 
-    ), /*slideshow*/
-    
-    'events' => array(
-       'name' => 'events',
-       'title' => 'Events',
-       'default' => false,
-       'fields' => array(
-            'title' => array('type'=>'text', 'name'=> 'title', 'title'=> 'Title',
-                             'rules' => array('required'=> 'true')
-                ),   
-            'time' => array('type'=>'text', 'name'=> 'time', 'title'=> 'Time',
-                             'rules' => array('required'=> 'true')
-                ),           
-            'description' => array('type'=>'textarea', 'name'=> 'description', 'title'=> 'Description',
-                             
-                ),
-            'venue' => array('type'=>'textarea', 'name'=> 'venue', 'title'=> 'Venue',
-                             
-                ),           
-            'image' => array('type'=>'file', 'name'=> 'image', 'title'=> 'Image'),
-            'order' => array('type'=>'text', 'name'=> 'order', 'title'=> 'Order'),
-            'status' => array('type'=>'select', 'name'=>'status', 'title'=> 'Status', 
-                           'options' => array(
-                               'draft' => 'draft',
-                               'publish' => 'publish',
-                               'delete' => 'delete',
-                           )
-                ),           
-       ) 
-    ), /*slideshow*/    
+
     'default' => array(
         'fields' => array(
             'title' => array('type'=>'text', 'name'=> 'title', 'title'=> 'Title',

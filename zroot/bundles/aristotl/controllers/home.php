@@ -19,7 +19,7 @@ class Aristotl_Home_Controller extends Aristotl_Base_Controller{
        $this->sect['title'] = $this->title;
        $this->sect['menu_active'] = 'home';
        
-       $sections = array('slider','about','docs','teams');
+       $sections = array('about');
       // $sections = array('');
        $secti = '';
        foreach($sections as $sect){
